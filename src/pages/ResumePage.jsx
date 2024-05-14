@@ -1,6 +1,5 @@
 import React from "react";
 
-import resumeImg from "../assets/img/jesse_denier_resume.png";
 import resumePDF from "../assets/pdf/jesse_denier_resume.pdf";
 
 export default function AboutPage() {
