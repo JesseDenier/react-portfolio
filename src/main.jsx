@@ -6,12 +6,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Imports required imports from Bootstrap to apply CSS.
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./main.css";
 
 // Imports the App.jsx file which works with the router.
 import App from "./App";
 
 // Imports pages the router will use to conditionally show the appropriate views.
-import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import AboutPage from "./pages/AboutPage";
 import CodePage from "./pages/CodePage";
@@ -30,34 +30,30 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />,
-      },
-      {
-        path: "/About",
         element: <AboutPage />,
       },
       {
-        path: "/Code",
+        path: "/code",
         element: <CodePage />,
       },
       {
-        path: "/Design",
+        path: "/design",
         element: <DesignPage />,
       },
       {
-        path: "/Remodel",
+        path: "/remodel",
         element: <RemodelPage />,
       },
       {
-        path: "/Event",
+        path: "/event",
         element: <EventPage />,
       },
       {
-        path: "/Contact",
+        path: "/contact",
         element: <ContactPage />,
       },
       {
-        path: "/Resume",
+        path: "/resume",
         element: <ResumePage />,
       },
     ],

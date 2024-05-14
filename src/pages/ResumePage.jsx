@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <div>
       <h1>Resume Page</h1>
-      <p>Resume</p>;
+      <p>Resume</p>
     </div>
   );
 }
