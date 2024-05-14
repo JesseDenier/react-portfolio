@@ -1,3 +1,4 @@
+// Imports required imports from React.
 import React from "react";
 import { Outlet } from "react-router-dom";
 
