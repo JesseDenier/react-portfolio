@@ -18,6 +18,21 @@ export default function ContactPage() {
     });
   };
 
+  // Alerts the user that field is required if left empty.
+  // Also alerts the user if email doesn't match the regex.
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    const capitalizedFieldName = name.charAt(0).toUpperCase() + name.slice(1);
+    if (value.trim() === "") {
+      alert(`${capitalizedFieldName} is required`);
+    } else if (
+      name === "email" &&
+      !/^[a-z0-9_\.-]+@[\da-z\.-]+\.[a-z\.]{2,6}$/.test(value.toLowerCase())
+    ) {
+      alert("Invalid email format");
+    }
+  };
+
   // Handles form submission.
   const handleSubmit = (e) => {
     // Prevents the default form submission behavior
@@ -48,6 +63,7 @@ export default function ContactPage() {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            onBlur={handleBlur}
             required
           />
         </div>
@@ -60,6 +76,7 @@ export default function ContactPage() {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            onBlur={handleBlur}
             required
           />
         </div>
@@ -71,6 +88,7 @@ export default function ContactPage() {
             name="message"
             value={formData.message}
             onChange={handleChange}
+            onBlur={handleBlur}
             required
           />
         </div>
