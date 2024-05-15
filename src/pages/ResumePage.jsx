@@ -2,7 +2,7 @@ import React from "react";
 
 import resumePDF from "../assets/pdf/jesse_denier_resume.pdf";
 
-export default function AboutPage() {
+export default function ResumePage() {
   return (
     <div>
       <h1>Resume</h1>

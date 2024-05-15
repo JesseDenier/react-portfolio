@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AboutPage() {
+export default function DesignPage() {
   return (
     <div>
       <h1>Designs</h1>
