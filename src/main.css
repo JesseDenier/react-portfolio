@@ -1,3 +1,117 @@
-.active a {
-  color: red;
+/*! ROOT */
+/* Stores repeatable values for future CSS. */
+:root {
+  --black: #000000ff;
+  --green: #3c5a14ff;
+  --tan: #c8b492ff;
+  --gray: #326273ff;
+  --blue: #42bfddff;
+}
+
+/*! NORMALIZATION */
+/* Zeroes out padding and margin. + Sets a custom font. + Adjusts hashtag scrolling for fixed header. */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-margin-top: 69px;
+}
+
+/* Fixes default colors and effects applied to links. */
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Sets background color and forces content below fixed header. */
+body {
+  background-color: var(--tan);
+  margin-top: 80px; /* This allows the header to be fixed. */
+  margin-bottom: 60px; /* This allows the footer to be fixed. */
+}
+
+/*! HEADER AND NAVBAR */
+
+.header {
+  background-color: var(--black);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.headerContents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.logo img {
+  width: 35px;
+}
+
+.logoName {
+  color: var(--green);
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  transition: all 0.25s;
+  margin: 0;
+}
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 10px;
+}
+
+.navList li {
+  color: var(--green);
+  font-size: 16px;
+  transition: all 0.5s;
+}
+
+.navList li:hover {
+  color: var(--gray);
+}
+
+.navList li.active a {
+  color: var(--blue);
+}
+
+/*! FOOTER */
+
+.footer {
+  background-color: var(--black);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.footerContents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  column-gap: 30px;
+  height: 60px;
+}
+
+.footerContents img {
+  height: 30px;
 }
