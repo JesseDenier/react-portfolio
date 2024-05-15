@@ -189,3 +189,53 @@ body {
   font-size: 14px;
   margin-top: 5px;
 }
+
+/*! RESUME PAGE */
+
+.resume-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 140px);
+  background-color: var(--tan);
+}
+
+.resume-content-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.resume-content-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+.resume-content-container p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-content-container p a {
+  color: var(--blue);
+}
+
+.skills-section {
+  margin-bottom: 30px;
+}
+
+.skills-section h2 {
+  color: var(--black);
+}
+
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-section li {
+  margin-bottom: 5px;
+}
