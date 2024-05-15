@@ -19,79 +19,75 @@ import bingoImg from "../assets/img/code_bingo.png";
 // Exports all the HTML that will display on the code page.
 export default function CodePage() {
   return (
-    <div>
+    <div className="code-page">
       <h1>Code</h1>
       <p>
         A compilation of projects I've undertaken, spanning from my initiation
         into web design in 2018 to reaching a significant proficiency level in
         2024.
       </p>
-      <CodeCard
-        title="Corporate Expense Tracker"
-        imageSrc={expenseTrackerImg}
-        deployedLink="https://expense-tracker-ut-8e4127567b9a.herokuapp.com/login"
-        repoLink="https://github.com/kleppy/expense-tracker"
-      />
-      <CodeCard
-        title="Multiple-Choice Quiz"
-        imageSrc={quizImg}
-        deployedLink="https://jessedenier.github.io/Multiple-Choice-Quiz/"
-        repoLink="https://github.com/JesseDenier/Multiple-Choice-Quiz"
-      />
-      <CodeCard
-        title="Password Generator"
-        imageSrc={passwordImg}
-        deployedLink="https://jessedenier.github.io/Password-Generator/"
-        repoLink="https://github.com/JesseDenier/Password-Generator"
-      />
-      <CodeCard
-        title="Multiple-Choice Quiz"
-        imageSrc={companyWebsiteImg}
-        deployedLink="https://formatllc.com/"
-        repoLink="https://github.com/JesseDenier/Format-Website"
-      />
-      <CodeCard
-        title="Corporate Expense Tracker"
-        imageSrc={expenseTrackerImg}
-        deployedLink="https://expense-tracker-ut-8e4127567b9a.herokuapp.com/login"
-        repoLink="https://github.com/kleppy/expense-tracker"
-      />
-      <CodeCard
-        title="Parlay Calculator"
-        imageSrc={parlayImg}
-        deployedLink="https://jessedenier.github.io/Parlay-Probability/"
-        repoLink="https://github.com/JesseDenier/Parlay-Probability"
-      />
-      <CodeCard
-        title="Recipe Creator"
-        imageSrc={recipeImg}
-        deployedLink="https://jessedenier.github.io/Recipe-Creator/"
-        repoLink="https://github.com/JesseDenier/Recipe-Creator"
-      />
-      <CodeCard
-        title="Accessibility Cleanup"
-        imageSrc={cleanupImg}
-        deployedLink="https://jessedenier.github.io/Adding-Accessibility-and-Semantic-Code/"
-        repoLink="https://github.com/JesseDenier/Adding-Accessibility-and-Semantic-Code"
-      />
-      <CodeCard
-        title="Work Scheduler"
-        imageSrc={scheduleImg}
-        deployedLink="https://jessedenier.github.io/Work-Scheduler/"
-        repoLink="https://github.com/JesseDenier/Work-Scheduler"
-      />
-      <CodeCard
-        title="Weather Dashboard"
-        imageSrc={weatherImg}
-        deployedLink="https://jessedenier.github.io/Weather-Dashboard/"
-        repoLink="https://github.com/JesseDenier/Weather-Dashboard"
-      />
-      <CodeCard
-        title="Bingo"
-        imageSrc={bingoImg}
-        deployedLink="https://jessedenier.github.io/Bingo/"
-        repoLink="https://github.com/JesseDenier/Bingo"
-      />
+      <div className="code-cards-container">
+        <CodeCard
+          title="Corporate Expense Tracker"
+          imageSrc={expenseTrackerImg}
+          deployedLink="https://expense-tracker-ut-8e4127567b9a.herokuapp.com/login"
+          repoLink="https://github.com/kleppy/expense-tracker"
+        />
+        <CodeCard
+          title="Multiple-Choice Quiz"
+          imageSrc={quizImg}
+          deployedLink="https://jessedenier.github.io/Multiple-Choice-Quiz/"
+          repoLink="https://github.com/JesseDenier/Multiple-Choice-Quiz"
+        />
+        <CodeCard
+          title="Password Generator"
+          imageSrc={passwordImg}
+          deployedLink="https://jessedenier.github.io/Password-Generator/"
+          repoLink="https://github.com/JesseDenier/Password-Generator"
+        />
+        <CodeCard
+          title="Corporate Website"
+          imageSrc={companyWebsiteImg}
+          deployedLink="https://formatllc.com/"
+          repoLink="https://github.com/JesseDenier/Format-Website"
+        />
+        <CodeCard
+          title="Parlay Calculator"
+          imageSrc={parlayImg}
+          deployedLink="https://jessedenier.github.io/Parlay-Probability/"
+          repoLink="https://github.com/JesseDenier/Parlay-Probability"
+        />
+        <CodeCard
+          title="Recipe Creator"
+          imageSrc={recipeImg}
+          deployedLink="https://jessedenier.github.io/Recipe-Creator/"
+          repoLink="https://github.com/JesseDenier/Recipe-Creator"
+        />
+        <CodeCard
+          title="Accessibility Cleanup"
+          imageSrc={cleanupImg}
+          deployedLink="https://jessedenier.github.io/Adding-Accessibility-and-Semantic-Code/"
+          repoLink="https://github.com/JesseDenier/Adding-Accessibility-and-Semantic-Code"
+        />
+        <CodeCard
+          title="Work Scheduler"
+          imageSrc={scheduleImg}
+          deployedLink="https://jessedenier.github.io/Work-Scheduler/"
+          repoLink="https://github.com/JesseDenier/Work-Scheduler"
+        />
+        <CodeCard
+          title="Weather Dashboard"
+          imageSrc={weatherImg}
+          deployedLink="https://jessedenier.github.io/Weather-Dashboard/"
+          repoLink="https://github.com/JesseDenier/Weather-Dashboard"
+        />
+        <CodeCard
+          title="Bingo"
+          imageSrc={bingoImg}
+          deployedLink="https://jessedenier.github.io/Bingo/"
+          repoLink="https://github.com/JesseDenier/Bingo"
+        />
+      </div>
     </div>
   );
 }

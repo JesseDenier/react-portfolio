@@ -151,6 +151,54 @@ body {
   height: auto;
 }
 
+/*! CODE PAGE */
+
+.code-page {
+  padding: 20px;
+  background-color: var(--tan);
+}
+
+.code-page h1,
+.code-page p {
+  text-align: center;
+  color: var(--black);
+}
+
+.code-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.codeCard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.codeCard h2 {
+  color: var(--black);
+}
+
+.codeCard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.codeCard a {
+  display: block;
+  margin-top: 10px;
+  color: var(--blue);
+}
+
+.codeCard a:hover {
+  text-decoration: underline;
+}
+
 /*! CONTACT PAGE */
 
 /* Wrapper div */
